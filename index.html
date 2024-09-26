@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>簡単なWebサイト</title>
+
     <style>
         body {
             margin: 0;
@@ -31,11 +32,18 @@
             bottom: 0;
             width: 100%;
         }
+
+        img {
+            max-width: 100%; /* 画像が画面幅を超えないようにする */
+            height: auto;    /* アスペクト比を保つ */
+            display: block;  /* ブロック要素として表示 */
+            margin: 20px auto; /* 中央に配置 */
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>私のお菓子づくり〈/h1>
+        <h1>私のお菓子づくり</h1> <!-- 修正: 終了タグを正しく -->
     </header>
     
     <main>
@@ -57,3 +65,4 @@
     </footer>
 </body>
 </html>
+
